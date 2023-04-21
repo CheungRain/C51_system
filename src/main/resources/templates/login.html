@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>欢迎登录温湿度检测系统</title>
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link th:href="@{./css/login.css}" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <div class="login-wrapper">
+    <div class="header">Login</div>
+    <div class="form-wrapper">
+      <input type="text" id="number" placeholder="number" class="input-item">
+      <input type="password" id="password" placeholder="password" class="input-item">
+      <div id="msg" class="msg" th:align="center">用户账号或密码错误</div>
+      <div class="btn" onclick="fun1()">Login</div>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+<script th:src="@{./js/login.js}" type="text/javascript"></script>
+</html>
