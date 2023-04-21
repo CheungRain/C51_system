@@ -1,4 +1,4 @@
-# 基于C51单片机的智能温湿度检测系统设计
+# 基于C51单片机的智能温湿度检测系统
 
 #### 技术栈
 java springboot,mybatis-plus,thymeleaf + mysql + javascript jQuery,ajax + html + css 
