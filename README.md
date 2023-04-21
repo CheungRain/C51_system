@@ -34,4 +34,4 @@ java springboot,mybatis-plus,thymeleaf + mysql + javascript jQuery,ajax + html +
 4.  git commit -m "提交内容介绍"
 5.  git remote add origin 远程仓库地址
 6.  git pull --rebase origin master 从远程仓库拉取
-7.  git push -u origin master 向远程仓库推送
+7.  git push -u origin master/main 向远程仓库推送
