@@ -11,8 +11,8 @@ java springboot,mybatis-plus,thymeleaf + mysql + javascript jQuery,ajax + html +
 3. 数据访问层(持久层)mapper:主要是做数据持久层的工作，同时提供增删改查(CRUD)工作，直接操作数据库。
 4. 数据服务层service:主要负责业务模块的逻辑应用设计，同时有一些是关于数据库处理的操作，但是不是直接和底层数据库关联，而是首先设计接口，再设计其实现的类，在接口实现方法中需要导入Mapper层，接着再Spring的配置文件中配置其实现的关联。这样就可以在应用中调用Service接口来进行业务处理。
 5. 前端控制器controller:负责具体的业务模块流程的控制，响应用户的请求，调用Service层的接口来控制业务流程，决定使用何种视图并准备响应数据。并把接收到的参数传给Mapper，调用Mapper的方法接口。
-6. 工具类util
-7. 配置信息类config
+6. 工具类util:自己编写辅助开发的类
+7. 配置信息类config:实现拦截器，跨域等配置文件
 8. 拦截器interceptor:实现登录拦截，如果session中没有用户信息，则重定向登录页面
 
 底层结构图
