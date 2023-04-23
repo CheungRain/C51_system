@@ -28,10 +28,10 @@ java springboot,mybatis-plus,thymeleaf + mysql + javascript jQuery,ajax + html +
 
 #### GIT使用教程
 
-1.  初始化:git init 初次创建
-2.  git status
-3.  git add . 向本地仓库添加文件
-4.  git commit -m "提交内容介绍"
-5.  git remote add origin 远程仓库地址
-6.  git pull --rebase origin master 从远程仓库拉取
-7.  git push -u origin master 向远程仓库推送
+1.  git init                          //初次创建，初始化仓库
+2.  git status                        //检查仓库状态
+3.  git add .                         //向暂存区添加文件
+4.  git commit -m "提交内容介绍"        //将暂存区文件提交到本地仓库
+5.  git remote add origin 远程仓库地址  //关联远程仓库地址
+6.  git pull --rebase origin master   //从远程仓库拉取
+7.  git push -u origin master         //将本地仓库文件提交到远程仓库
