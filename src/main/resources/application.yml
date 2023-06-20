@@ -1,6 +1,6 @@
 #DataSource Config
 server:
-  port: 2121
+  port: 1289
 
 
 tomcat:
