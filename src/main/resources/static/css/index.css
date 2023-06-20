@@ -16,8 +16,38 @@ h1{
     bottom: 25px;
     font-size: 30px;
 }
+/*.div1{*/
+/*    position: absolute;*/
+/*    height: 340px;*/
+/*    width: 290px;*/
+/*    left: 150px;*/
+/*    top: 150px;*/
+/*    border-top-left-radius: 10%;*/
+/*    border-top-right-radius: 10%;*/
+/*    border-bottom-left-radius: 10%;*/
+/*    border-bottom-right-radius: 10%;*/
+/*    background-color: rgba(0, 255, 157, 0.18);*/
+/*}*/
+/*.div2{*/
+/*    position: absolute;*/
+/*    height: 340px;*/
+/*    width: 290px;*/
+/*    right: 150px;*/
+/*    top: 150px;*/
+/*    border-top-left-radius: 10%;*/
+/*    border-top-right-radius: 10%;*/
+/*    border-bottom-left-radius: 10%;*/
+/*    border-bottom-right-radius: 10%;*/
+/*    background-color: rgba(82, 238, 233, 0.16);*/
+/*}*/
+/*.div1:hover {*/
+/*    box-shadow: 0 0 20px rgba(0, 0, 0, 0.69);*/
+/*}*/
+/*.div2:hover {*/
+/*    box-shadow: 0 0 20px rgba(0, 0, 0, 0.69);*/
+/*}*/
 .div1{
-    position: absolute;
+    position: fixed;
     height: 340px;
     width: 290px;
     left: 150px;
@@ -26,10 +56,12 @@ h1{
     border-top-right-radius: 10%;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.69);
     background-color: rgba(0, 255, 157, 0.18);
+    z-index: 999;
 }
 .div2{
-    position: absolute;
+    position: fixed;
     height: 340px;
     width: 290px;
     right: 150px;
@@ -38,13 +70,9 @@ h1{
     border-top-right-radius: 10%;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.69);
     background-color: rgba(82, 238, 233, 0.16);
-}
-.div1:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.69);
-}
-.div2:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.69);
+    z-index: 999;
 }
 .div11{
     font-size: 40px;
@@ -53,13 +81,13 @@ h1{
 #in1, #in2 {
     font-family: 'Raleway', sans-serif;
     background: white;
-    padding: 8px;
+    padding: 7px;
     margin: 10px 0;
     border-radius: 5px;
     border: 2px solid rgba(60, 231, 211, 0.63);
     color: #000000;
     font-size: 16px;
-    width: 80px;
+    width: 85px;
     text-align: center;
     box-sizing: border-box;
     transition: all 0.3s;
@@ -80,7 +108,7 @@ h1{
     border-radius: 5px;
     padding: 10px;
     font-size: 16px;
-    box-shadow: 0 5px 20px #61e73c;
+    box-shadow: 0 5px 20px #3ce780;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -91,7 +119,7 @@ h1{
     border-radius: 5px;
     padding: 10px;
     font-size: 16px;
-    box-shadow: 0 5px 20px #52c4ee;
+    box-shadow: 0 5px 20px rgba(82, 155, 238, 0.78);
     cursor: pointer;
     transition: all 0.3s ease;
 }
