@@ -18,15 +18,18 @@ function fun() {
             $("#hum").text(ajaxobj.hum);
             let x = $("#tem_top").text();
             let y = $("#hum_top").text();
+            let audio = new Audio('../music/music.wav');
             if(ajaxobj.tem>x){
                 //alert("温度超过阈值!");
                 $("#tem").css("color","#ff0051");
+                audio.play();
             }else{
                 $("#tem").css("color","rgb(0,0,0)");
             }
             if(ajaxobj.hum>y){
                 //alert("湿度超过阈值!");
                 $("#hum").css("color","#ff0051");
+                audio.play();
             }else{
                 $("#hum").css("color","rgb(0,0,0)");
             }
