@@ -1,13 +1,14 @@
 
 function fun() {
     let targetUrl='/index/send';
-    let obj = "+IPD+"+($("#tem_top").text()).toString()+"+"+($("#hum_top").text()).toString();
+    //let obj = "+IPD+"+($("#tem_top").text()).toString()+"+"+($("#hum_top").text()).toString();
     console.log("请求地址是：" + targetUrl)
     $.ajax({
         url: targetUrl,
         data:
         {
-            obj: obj
+            tem_top:$("#tem_top").text(),
+            hum_top:$("#hum_top").text()
         },
         type: "GET",
         dataType: "text",
@@ -18,7 +19,8 @@ function fun() {
             $("#hum").text(ajaxobj.hum);
             let x = $("#tem_top").text();
             let y = $("#hum_top").text();
-            let audio = new Audio('../music/music.wav');
+            //let audio = new Audio('../music/music.wav');
+            let audio = new Audio('../music/bee.mp3');
             if(ajaxobj.tem>x){
                 //alert("温度超过阈值!");
                 $("#tem").css("color","#ff0051");

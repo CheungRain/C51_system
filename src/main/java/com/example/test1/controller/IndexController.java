@@ -20,6 +20,7 @@ public class IndexController {
     private String s5 = "temperature threshold(℃):";//22
     private String s6 = "humidity threshold(%):";//19
     OrdinaryData test = new OrdinaryData();
+    //TopData top = new TopData();
     @RequestMapping("/index")
     public String index(Model model, HttpServletRequest request){
         User user = (User) request.getSession().getAttribute("user");
@@ -45,16 +46,18 @@ public class IndexController {
     @CrossOrigin
     @GetMapping ("/index/send")
     @ResponseBody
-    public OrdinaryData indexSendData(@RequestParam String obj,
-                                  Model model,HttpServletRequest request) throws InterruptedException {
+    public OrdinaryData indexSendData(@RequestParam int tem_top,@RequestParam int hum_top,
+                                      Model model,HttpServletRequest request) throws InterruptedException {
         User user = (User) request.getSession().getAttribute("user");
         model.addAttribute("user", user);
         Thread.sleep(1000);
-        System.out.println(obj);
+        //System.out.println(obj);
         test.setTem(tOrd);
         test.setHum(hOrd);
-        tOrd++;
-        hOrd++;
+        tTop = tem_top;
+        hTop = hum_top;
+        //tOrd++;
+        //hOrd++;
         return test;
     }
 

@@ -19,7 +19,8 @@ java springboot,mybatis-plus,thymeleaf + mysql + javascript jQuery,ajax + html +
 <img height="600" src="src\main\resources\static\img\2.png" width="650"/>
 
 
-
+程序流程图
+<img height="600" src="src\main\resources\static\img\3.png" width="650"/>
 #### 系统使用说明
 
 1.  第一次使用要先进行用户登录，如果服务器没有在session中检测到用户信息，会使用springboot拦截器，对用户请求进行拦截，重定位到登录页面

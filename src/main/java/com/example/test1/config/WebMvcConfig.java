@@ -16,6 +16,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .excludePathPatterns(
                         "/login",
                         "/login/check",
+                        //"/index/get-and-send-data",
                         "/**/*.html",   //html静态资源
                         "/**/*.js",     //js静态资源
                         "/**/*.css"     //css静态资源
